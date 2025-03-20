@@ -11,6 +11,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: const Splash());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(backgroundColor: Colors.black, body: const Splash()),
+    );
   }
 }
